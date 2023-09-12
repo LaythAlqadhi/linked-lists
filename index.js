@@ -9,7 +9,6 @@ class LinkedList {
   
   append(value) {
     if (this.head === null) return this.prepend(value);
-    
     let tmp = this.head;
     while (tmp.next !== null) tmp = tmp.next;
     tmp.next = new Node(value, null);
